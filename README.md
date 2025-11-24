@@ -98,7 +98,7 @@ ecowheels/
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) for details.
+MIT License - See [LICENSE](https://github.com/Ipuuuu/EcoWheels_Proj/blob/main/LICENSE) for details.
 
 ---
 
