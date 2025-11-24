@@ -29,7 +29,7 @@ Real-world complexity with varied lighting, backgrounds, and angles - perfect fo
 
 ```bash
 # Clone repository
-git clone https://github.com/your-team/ecowheels.git
+git clone https://github.com/Ipuuuu/EcoWheels_Proj.git
 cd ecowheels
 
 # Install dependencies
