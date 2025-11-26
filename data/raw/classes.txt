@@ -1,0 +1,8 @@
+Cardboard
+Glass
+Metal
+Mixed Waste
+Organic Waste
+Paper
+Plastic
+Textiles
