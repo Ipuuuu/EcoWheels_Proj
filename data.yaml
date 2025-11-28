@@ -1,0 +1,7 @@
+path: /home/codeneers/Documents/IMMA/EcoWheels_Proj/data
+train: train/images
+val: validation/images
+
+nc: 8
+
+names: ["Cardboard", "Glass", "Metal", "Mixed Waste", "Organic Waste", "Paper", "Plastic", "Textiles"]

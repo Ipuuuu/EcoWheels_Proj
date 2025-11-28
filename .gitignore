@@ -1,0 +1,46 @@
+# ===== PYTHON =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+eco/
+env/
+.eco/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files
+*.log
+
+# ===== OBJECT DETECTION PROJECT =====
+# Exclude dataset images
+dataset/
+data/
+images/
+imgs/
+train/
+test/
+validation/
+
+# If you want to be more specific:
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+
+# YOLO/TF/PyTorch model weights
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pb
+checkpoints/
+weights/
+
+# ===== SYSTEM FILES =====
+.DS_Store
+Thumbs.db
