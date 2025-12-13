@@ -1,0 +1,160 @@
+============================================================
+ANNOTATION UPDATE REPORT
+============================================================
+
+Dataset: /home/immaculatapatrickumoh/Documents/EcoWheels_Proj/Org_dataset
+Updated annotations file: annotations_updated.json
+Timestamp: Thu  4 Dec 00:57:16 EET 2025
+
+DATASET STATISTICS
+----------------------------------------
+Total images: 1,500
+Total annotations: 4,784
+Categories: 60
+Unique filenames: 1,500
+Duplicate filenames: 0
+Sample check: 20/20 files found
+
+BATCH DISTRIBUTION
+----------------------------------------
+batch_1: 101 images
+batch_2: 92 images
+batch_3: 97 images
+batch_4: 89 images
+batch_5: 112 images
+batch_6: 97 images
+batch_7: 127 images
+batch_8: 100 images
+batch_9: 100 images
+batch_10: 100 images
+batch_11: 100 images
+batch_12: 100 images
+batch_13: 100 images
+batch_14: 100 images
+batch_15: 85 images
+
+CATEGORIES
+----------------------------------------
+0: Aluminium foil
+1: Battery
+2: Aluminium blister pack
+3: Carded blister pack
+4: Other plastic bottle
+5: Clear plastic bottle
+6: Glass bottle
+7: Plastic bottle cap
+8: Metal bottle cap
+9: Broken glass
+10: Food Can
+11: Aerosol
+12: Drink can
+13: Toilet tube
+14: Other carton
+15: Egg carton
+16: Drink carton
+17: Corrugated carton
+18: Meal carton
+19: Pizza box
+20: Paper cup
+21: Disposable plastic cup
+22: Foam cup
+23: Glass cup
+24: Other plastic cup
+25: Food waste
+26: Glass jar
+27: Plastic lid
+28: Metal lid
+29: Other plastic
+30: Magazine paper
+31: Tissues
+32: Wrapping paper
+33: Normal paper
+34: Paper bag
+35: Plastified paper bag
+36: Plastic film
+37: Six pack rings
+38: Garbage bag
+39: Other plastic wrapper
+40: Single-use carrier bag
+41: Polypropylene bag
+42: Crisp packet
+43: Spread tub
+44: Tupperware
+45: Disposable food container
+46: Foam food container
+47: Other plastic container
+48: Plastic glooves
+49: Plastic utensils
+50: Pop tab
+51: Rope & strings
+52: Scrap metal
+53: Shoe
+54: Squeezable tube
+55: Plastic straw
+56: Paper straw
+57: Styrofoam piece
+58: Unlabeled litter
+59: Cigarette
+
+ANNOTATION STATISTICS
+----------------------------------------
+Annotations per category:
+  Aluminium foil (ID 0): 62
+  Battery (ID 1): 2
+  Aluminium blister pack (ID 2): 6
+  Carded blister pack (ID 3): 1
+  Other plastic bottle (ID 4): 50
+  Clear plastic bottle (ID 5): 285
+  Glass bottle (ID 6): 104
+  Plastic bottle cap (ID 7): 209
+  Metal bottle cap (ID 8): 80
+  Broken glass (ID 9): 138
+  Food Can (ID 10): 34
+  Aerosol (ID 11): 10
+  Drink can (ID 12): 229
+  Toilet tube (ID 13): 5
+  Other carton (ID 14): 93
+  Egg carton (ID 15): 11
+  Drink carton (ID 16): 45
+  Corrugated carton (ID 17): 64
+  Meal carton (ID 18): 30
+  Pizza box (ID 19): 3
+  Paper cup (ID 20): 67
+  Disposable plastic cup (ID 21): 104
+  Foam cup (ID 22): 13
+  Glass cup (ID 23): 6
+  Other plastic cup (ID 24): 2
+  Food waste (ID 25): 8
+  Glass jar (ID 26): 6
+  Plastic lid (ID 27): 77
+  Metal lid (ID 28): 10
+  Other plastic (ID 29): 273
+  Magazine paper (ID 30): 12
+  Tissues (ID 31): 42
+  Wrapping paper (ID 32): 12
+  Normal paper (ID 33): 82
+  Paper bag (ID 34): 27
+  Plastic film (ID 36): 451
+  Six pack rings (ID 37): 5
+  Garbage bag (ID 38): 31
+  Other plastic wrapper (ID 39): 260
+  Single-use carrier bag (ID 40): 61
+  Polypropylene bag (ID 41): 3
+  Crisp packet (ID 42): 39
+  Spread tub (ID 43): 9
+  Tupperware (ID 44): 4
+  Disposable food container (ID 45): 38
+  Foam food container (ID 46): 15
+  Other plastic container (ID 47): 6
+  Plastic glooves (ID 48): 4
+  Plastic utensils (ID 49): 37
+  Pop tab (ID 50): 99
+  Rope & strings (ID 51): 29
+  Scrap metal (ID 52): 20
+  Shoe (ID 53): 7
+  Squeezable tube (ID 54): 7
+  Plastic straw (ID 55): 157
+  Paper straw (ID 56): 4
+  Styrofoam piece (ID 57): 112
+  Unlabeled litter (ID 58): 517
+  Cigarette (ID 59): 667

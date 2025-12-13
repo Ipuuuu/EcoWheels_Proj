@@ -1,0 +1,25 @@
+============================================================
+IMAGE RENAMING REPORT
+============================================================
+
+Dataset: /home/immaculatapatrickumoh/Documents/EcoWheels_Proj/Org_dataset
+Total images renamed: 1500
+Timestamp: Thu  4 Dec 00:56:33 EET 2025
+
+Batch Summary:
+----------------------------------------
+batch_1: 101 images
+batch_2: 92 images
+batch_3: 97 images
+batch_4: 89 images
+batch_5: 112 images
+batch_6: 97 images
+batch_7: 127 images
+batch_8: 100 images
+batch_9: 100 images
+batch_10: 100 images
+batch_11: 100 images
+batch_12: 100 images
+batch_13: 100 images
+batch_14: 100 images
+batch_15: 85 images

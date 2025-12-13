@@ -24,6 +24,12 @@ imgs/
 train/
 test/
 validation/
+balanced_final/
+Org_dataset/
+Org_dataset_backup/
+yolo_taco/
+yolo_taco_material_merged/
+
 
 # If you want to be more specific:
 *.jpg
@@ -31,6 +37,8 @@ validation/
 *.png
 *.bmp
 *.gif
+*.ipynb
+
 
 # YOLO/TF/PyTorch model weights
 *.pt

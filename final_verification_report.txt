@@ -1,0 +1,63 @@
+============================================================
+DATASET VERIFICATION REPORT
+============================================================
+
+Dataset: /home/immaculatapatrickumoh/Documents/EcoWheels_Proj/Org_dataset
+Verification date: Thu  4 Dec 00:57:29 EET 2025
+
+OVERALL STATISTICS
+----------------------------------------
+Total images in annotations: 1,500
+Total annotations: 4,784
+Categories: 60
+Unique filenames: 1,500
+Duplicate filenames: 0
+Images without annotations: 0
+
+VERIFICATION RESULTS
+----------------------------------------
+Filename format correct: 1,500/1,500 (100.0%)
+Files found on disk: 91/91 (100.0%)
+Missing files in sample: 0
+
+BATCH DISTRIBUTION
+----------------------------------------
+batch_1: 101 images (6.7%)
+batch_2: 92 images (6.1%)
+batch_3: 97 images (6.5%)
+batch_4: 89 images (5.9%)
+batch_5: 112 images (7.5%)
+batch_6: 97 images (6.5%)
+batch_7: 127 images (8.5%)
+batch_8: 100 images (6.7%)
+batch_9: 100 images (6.7%)
+batch_10: 100 images (6.7%)
+batch_11: 100 images (6.7%)
+batch_12: 100 images (6.7%)
+batch_13: 100 images (6.7%)
+batch_14: 100 images (6.7%)
+batch_15: 85 images (5.7%)
+
+CATEGORIES (first 20)
+----------------------------------------
+0: Aluminium foil
+1: Battery
+2: Aluminium blister pack
+3: Carded blister pack
+4: Other plastic bottle
+5: Clear plastic bottle
+6: Glass bottle
+7: Plastic bottle cap
+8: Metal bottle cap
+9: Broken glass
+10: Food Can
+11: Aerosol
+12: Drink can
+13: Toilet tube
+14: Other carton
+15: Egg carton
+16: Drink carton
+17: Corrugated carton
+18: Meal carton
+19: Pizza box
+... and 40 more categories
