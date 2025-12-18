@@ -52,3 +52,10 @@ weights/
 # ===== SYSTEM FILES =====
 .DS_Store
 Thumbs.db
+
+# dependencies
+/frontend/node_modules
+
+# next.js
+/frontend/.next/
+/frontend/out/
