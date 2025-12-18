@@ -39,47 +39,161 @@ pip install -r requirements.txt
 kaggle datasets download -d kneroma/tacotrashdataset -p data/raw
 
 # Train model
-yolo detect train data=data/taco_dataset/data.yaml model=yolo11n.pt epochs=50
+yolo detect train data=data/taco_dataset/data.yaml model=yolo11s.pt epochs=100
 
 # Test on webcam
 yolo detect predict model=runs/detect/train/weights/best.pt source=0
 ```
 
+
 ## 💻 Usage
 
-### Inference
+### Live Inference (Camera → YOLO → Browser)
+
+EcoWheels runs real-time object detection using a **phone camera (DroidCam)** streamed to a **local FastAPI server**, where YOLOv11 performs inference. The annotated video stream is then viewed in any browser.
+
+> ⚠️ **Note:** For demos with no internet connection, all devices must be on the **same local network (LAN)**.
+
+---
+
+### 1️⃣ Start DroidCam (Phone)
+
+* Install **DroidCam** on your phone
+* Connect your phone and PC to the **same Wi-Fi network**
+* Start the camera stream
+* Note the stream URL (example):
+
+  ```
+  http://192.168.5.117:4747/video
+  ```
+
+---
+
+### 2️⃣ Run the FastAPI YOLO Server (PC)
+
 ```bash
-# Webcam
-python src/detection/detector.py --source 0 --weights models/best.pt
-
-# Image
-python src/detection/detector.py --source path/to/image.jpg --weights models/best.pt
-
-# Demo Interface
-cd frontend && npm start
+cd src
+python server.py
 ```
+
+Or using uvicorn:
+
+```bash
+uvicorn server:app --host 0.0.0.0 --port 8000
+```
+
+The server will:
+
+* Read frames from DroidCam
+* Run YOLOv11 inference
+* Stream annotated frames as MJPEG
+
+---
+
+### 3️⃣ View the Live Detection Stream
+
+Open a browser on **any device on the same LAN** and navigate to:
+
+```
+http://<PC_LAN_IP>:8000/video
+```
+
+Example:
+
+```
+http://192.168.5.42:8000/video
+```
+
+You should see:
+
+* Live camera feed
+* Bounding boxes and class labels
+* Real-time detection updates
+
+---
+
+### 🌐 Optional: Remote Viewing (Internet Required)
+
+For remote access (development/demo only), you can expose the local server using **ngrok**:
+
+```bash
+ngrok http 8000
+```
+
+This generates a public URL such as:
+
+```
+https://abc123.ngrok-free.app/video
+```
+
+Anyone with the link can view the live detection stream while the server is running.
+
+> ⚠️ Not recommended for offline demos or unstable networks.
+
+---
+
+### 🧪 Supported Input Modes
+
+| Source                  | Status            |
+| ----------------------- | ----------------- |
+| Phone camera (DroidCam) | ✅ Recommended     |
+| Local webcam            | ✅ Supported       |
+| Image file              | ✅ Supported       |
+| Offline LAN demo        | ✅ Fully supported |
+| Cloud-only / serverless | ❌ Not supported   |
+
+---
+
+### 📝 Notes for Demos
+
+* Reduce camera resolution (e.g. 640×480) for stability
+* Limit FPS (5–10 FPS) for smoother streaming
+* Prefer **local LAN setup** over internet tunneling
+* Vercel frontend is optional and not required for offline demos
+
+
 
 ## 📈 Results
 
 | Metric | Score |
 |--------|-------|
-| mAP@0.5 | 79.1% |
-| Precision | 74.1% |
-| Recall | 77.2% |
+| mAP@0.5 | 13.5% |
+| Precision | 19.7% |
+| Recall | 14.4% |
 | Speed | ~40ms/image |
 
 ## 📁 Project Structure
 
 ```
-ecowheels/
-├── data/                  # TACO dataset (YOLO format)
-├── models/                # Trained weights
+EcoWheels_Proj/
+├── data/                          # TACO dataset (YOLO format)
+│   ├── images/                   # Raw images
+│   ├── labels/                   # YOLO format annotations
+│   ├── train/                    # Training split
+│   ├── validation/               # Validation split
+│   └── classes.txt              # Class definitions
+├── models/                        # Trained model weights & notebooks
+│   ├── Eco.ipynb                # Training & analysis notebook
+│   ├── yolo11n.pt               # Nano model
+│   ├── yolo11s.pt               # Small model
+│   └── runs/                    # Training runs & results
+├── yolo_taco/                     # YOLO-formatted dataset splits
+│   ├── train/
+│   ├── val/
+│   ├── test/
+│   └── data.yaml
+├── yolo_taco_material_merged/     # Material-based class merged dataset
+│   ├── train/
+│   ├── val/
+│   ├── test/
+│   └── data.yaml
+├── frontend/                      # React/Next.js demo interface
 ├── src/
-│   ├── detection/        # Inference code
-│   ├── hardware/         # RC car & arm control
-│   └── models/           # Training scripts
-├── frontend/             # React demo
-└── requirements.txt
+│   └── server.py                # FastAPI server for live detection
+├── Org_dataset/                   # Original dataset with annotations
+├── runs/                          # YOLO training outputs
+├── requirements.txt               # Python dependencies
+└── README.md                      # This file
 ```
 
 ## 👥 Team
